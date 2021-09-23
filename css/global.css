@@ -22,6 +22,8 @@
     --size: 20px;
     
     display: inline-block;
+
+    content: " ";
     
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
