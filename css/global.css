@@ -23,7 +23,7 @@
     
     display: inline-block;
 
-    content: " ";
+    content: "";
     
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
