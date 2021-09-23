@@ -20,13 +20,11 @@
 .triangle { /*https://dev.to/codingdudecom/triangle-in-css-3806#how-to-make-an-equilateral-triangle-using-raw-border-endraw-*/
     --color: var(--highlight);
     --size: 20px;
-    
-    display: inline-block;
 
-    content: "";
+    position: absolute;
     
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
-    border-bottom: calc(2 * var(--size) * 0.866) solid var(--color);
+    border-bottom: calc((1.732 / 2) * var(--size)) solid var(--color);
     border-top: var(--size) solid transparent;
 }
