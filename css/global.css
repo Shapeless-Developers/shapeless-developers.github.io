@@ -1,0 +1,30 @@
+#root {
+    --col-red:    #E0153A;
+    --col-blue:   #428DFB;
+    --col-purple: #4541B9;
+    --col-yellow: #F49806;
+    --col-green:  #35AD7D;
+    --col-white:  #FDFAD9;
+    --col-grey:   #343641;
+    --col-dark-grey: #343641;
+
+    --foreground: var(--col-white);
+    --background: var(--col-dark-grey);
+    --highlight:  var(--col-red);
+}
+
+/**********/
+/* SHAPES */
+/**********/
+
+.triangle { /*https://dev.to/codingdudecom/triangle-in-css-3806#how-to-make-an-equilateral-triangle-using-raw-border-endraw-*/
+    --color: var(--highlight);
+    --size: 20px;
+
+    display: inline-block;
+
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: calc(2 * var(--size) * 0.866) solid var(--color);
+    border-top: var(--size) solid transparent;
+}
